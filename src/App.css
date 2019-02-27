@@ -12,3 +12,8 @@
 .App-title {
   font-size: 1.5em;
 }
+
+#tree {
+  text-align: initial;
+  padding-left: 600px;
+}
