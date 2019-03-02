@@ -6,8 +6,8 @@ import Search from "./components/Search";
 
 class App extends Component {
   state = {
-    name: "express",
-    version: "latest"
+    name: "",
+    version: ""
   };
 
   handleNewSearch = ({ name, version }) => {
@@ -22,7 +22,12 @@ class App extends Component {
         </header>
         <Search onSearch={this.handleNewSearch} />
         <div id="tree" >
-          <Dependency module={this.state} />
+            {
+                (this.state.name === "")? null :
+                <ul>
+                    <Dependency module={this.state} loadDepth={1} key={`${this.state.name}@${this.state.version}`} />
+                </ul>
+            }
         </div>
       </div>
     );

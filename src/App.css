@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 18px;
 }
 
 .App-header {
@@ -16,4 +17,14 @@
 #tree {
   text-align: initial;
   padding-left: 600px;
+}
+li{
+  background: url("play.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  list-style-type: none;
+  padding-left: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+
 }
